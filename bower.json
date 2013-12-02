@@ -11,6 +11,7 @@
         "bootstrap": "*",
         "jquery": "*",
         "knockout": "*",
+        "knockout-mapping": "*",
         "sinon": "*",
         "sinon-qunit": "*",
         "qunit": "*"
