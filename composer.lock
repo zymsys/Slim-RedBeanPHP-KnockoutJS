@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "33b6cc12abf91fed9e8dd7785e571710",
+    "hash": "ed16e8be63179754a8bf8f440ca05e7c",
     "packages": [
         {
             "name": "gabordemooij/redbean",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gabordemooij/redbean.git",
-                "reference": "cd243e684966843bda2d19019715266a93c112e5"
+                "reference": "06270eec8446a58b76124c2f9e85336a71ea37fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/cd243e684966843bda2d19019715266a93c112e5",
-                "reference": "cd243e684966843bda2d19019715266a93c112e5",
+                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/06270eec8446a58b76124c2f9e85336a71ea37fc",
+                "reference": "06270eec8446a58b76124c2f9e85336a71ea37fc",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 "Object Relational Mapping",
                 "orm"
             ],
-            "time": "2013-11-27 19:03:03"
+            "time": "2013-12-01 11:47:28"
         },
         {
             "name": "slim/slim",
@@ -91,109 +91,6 @@
                 "router"
             ],
             "time": "2013-10-31 02:05:09"
-        },
-        {
-            "name": "slim/views",
-            "version": "dev-master",
-            "target-dir": "Slim/Views",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codeguy/Slim-Views.git",
-                "reference": "d70bda9cddf816a2593105df478030bc46d22e9c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim-Views/zipball/d70bda9cddf816a2593105df478030bc46d22e9c",
-                "reference": "d70bda9cddf816a2593105df478030bc46d22e9c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "slim/slim": ">=2.3.0"
-            },
-            "suggest": {
-                "smarty/smarty": "Smarty templating system",
-                "twig/twig": "Twig templating system"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Slim\\Views": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrew Smith",
-                    "email": "a.smith@silentworks.co.uk",
-                    "homepage": "http://thoughts.silentworks.co.uk/"
-                },
-                {
-                    "name": "Josh Lockhart",
-                    "email": "info@joshlockhart.com",
-                    "homepage": "http://www.joshlockhart.com/"
-                }
-            ],
-            "description": "Smarty and Twig View Parser package for the Slim Framework",
-            "homepage": "http://github.com/codeguy/Slim-Views",
-            "keywords": [
-                "extensions",
-                "slimphp",
-                "templating"
-            ],
-            "time": "2013-11-18 11:51:09"
-        },
-        {
-            "name": "twig/twig",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabpot/Twig.git",
-                "reference": "cab9fd9a100e74aafa201a03ca31aeeb4097c9bc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/cab9fd9a100e74aafa201a03ca31aeeb4097c9bc",
-                "reference": "cab9fd9a100e74aafa201a03ca31aeeb4097c9bc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.15-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com"
-                }
-            ],
-            "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
-            "keywords": [
-                "templating"
-            ],
-            "time": "2013-11-24 18:36:20"
         }
     ],
     "packages-dev": [
@@ -203,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "8dc533354fac0afe1e871810141b1cbbe63c4092"
+                "reference": "4bacffdd738e89a094fb352f0e26a414f67122b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/8dc533354fac0afe1e871810141b1cbbe63c4092",
-                "reference": "8dc533354fac0afe1e871810141b1cbbe63c4092",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/4bacffdd738e89a094fb352f0e26a414f67122b6",
+                "reference": "4bacffdd738e89a094fb352f0e26a414f67122b6",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +155,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-26 23:10:30"
+            "time": "2013-12-01 21:49:24"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -449,12 +346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2d80d4a45d350dc8b5c49c0796687ec8e3b0517c"
+                "reference": "f2b2becadcfd57a896f8ec3ad172bec434335436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2d80d4a45d350dc8b5c49c0796687ec8e3b0517c",
-                "reference": "2d80d4a45d350dc8b5c49c0796687ec8e3b0517c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f2b2becadcfd57a896f8ec3ad172bec434335436",
+                "reference": "f2b2becadcfd57a896f8ec3ad172bec434335436",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +415,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-28 05:38:34"
+            "time": "2013-12-01 18:59:19"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
