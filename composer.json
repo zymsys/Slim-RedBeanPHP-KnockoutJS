@@ -17,8 +17,6 @@
     },
     "require": {
         "slim/slim": "2.3.*",
-        "gabordemooij/redbean": "*",
-        "slim/views": "*",
-        "twig/twig": "*"
+        "gabordemooij/redbean": "*"
     }
 }
