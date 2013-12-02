@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Pole Manufacturing</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/srk.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>North Pole Manufacturing</h1>
+<ul class="nav nav-tabs" data-bind="foreach: tabs">
+    <li data-bind="css: {active: $data == $root.activeTab()}" class="active"><a href="#" data-bind="click: $root.setActiveTab($data), text:$data"></a></li>
+</ul>
+<div data-bind="visible: activeTab() == 'Clients'">
+    <ul data-bind="foreach:clients">
+        <li class="link" data-bind="text:name, click:$root.editClient"></li>
+    </ul>
+    <button class="btn" data-bind="click:newClient">Add Client</button>
+</div>
+<div class="modal fade" data-bind="showModal:editingClient, with:editingClient"
+     role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">&times;</button>
+                <h3 data-bind="text:name().length ? name : 'New Client'"></h3>
+            </div>
+            <div class="modal-body">
+                <form data-bind="submit:$root.saveClient">
+                    <div class="form-group">
+                        <label for="txtName">Name</label>
+                        <input data-bind="value:name" id="txtName" class="form-control" placeholder="Enter Name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="dlNice">Naughty or Nice</label>
+                        <select data-bind="value:nice" id="dlNice" class="form-control">
+                            <option value="1">Nice</option>
+                            <option value="0">Naughty</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-bind="click:$root.deleteClient">
+                    Delete
+                </button>
+                <button class="btn" data-bind="click:$root.saveClient">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/knockout/build/output/knockout-latest.debug.js"></script>
+<script src="bower_components/knockout-mapping/build/output/knockout.mapping-latest.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/viewmodel.js"></script>
+<script src="js/apply.js"></script>
+<script>
+    /*global viewModel */
+    $(function () {
+        "use strict";
+        viewModel.getClients();
+    });
+</script>
+</body>
+</html>

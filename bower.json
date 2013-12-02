@@ -1,0 +1,25 @@
+{
+    "name": "slim-redbean-knockout",
+    "version": "0.0.0",
+    "authors": [
+        "Vic Metcalfe <vic@zymsys.com>"
+    ],
+    "description": "A demo of knockout.js, the slim framework and the redbeanphp ORM",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "*",
+        "jquery": "*",
+        "knockout": "*",
+        "sinon": "*",
+        "sinon-qunit": "*",
+        "qunit": "*"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

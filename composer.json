@@ -1,0 +1,24 @@
+{
+    "name": "zymsys/slim_redbean_knockout",
+    "description": "A demo of knockout.js, the slim framework and the redbeanphp ORM",
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vic Metcalfe",
+            "email": "vic@zymsys.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"Zymurgy\\": "src/"}
+    },
+    "require": {
+        "slim/slim": "2.3.*",
+        "gabordemooij/redbean": "*",
+        "slim/views": "*",
+        "twig/twig": "*"
+    }
+}
