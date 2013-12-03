@@ -17,6 +17,7 @@
     <ul data-bind="foreach:clients">
         <li class="link" data-bind="text:name, click:$root.editClient"></li>
     </ul>
+    <div><span data-bind="text:niceCount">-</span> Nice Clients</div>
     <button class="btn" data-bind="click:newClient">Add Client</button>
 </div>
 <div class="modal fade" data-bind="showModal:editingClient, with:editingClient"

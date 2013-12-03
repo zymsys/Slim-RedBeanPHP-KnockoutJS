@@ -4,6 +4,7 @@ function ViewModel() {
 
     var viewModel = this;
 
+    //Tabs
     this.tabs = ['Clients', 'Inventory', 'Orders', 'Manufacturing'];
     this.activeTab = ko.observable(viewModel.tabs[0]);
     this.setActiveTab = function (tabName) {
@@ -11,8 +12,19 @@ function ViewModel() {
             viewModel.activeTab(tabName);
         };
     };
+
+    //Clients
     this.clients = ko.observableArray([]);
     this.editingClient = ko.observable();
+    this.niceCount = ko.computed(function () {
+        var count = 0;
+        ko.utils.arrayForEach(viewModel.clients(), function (client) {
+            if ("1" === client.nice()) {
+                count += 1;
+            }
+        });
+        return count;
+    });
     this.getClients = function (done) {
         $.ajax('/api/client/list', {
             success: function (data) {

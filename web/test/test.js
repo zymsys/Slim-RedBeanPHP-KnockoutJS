@@ -2,9 +2,9 @@
 function seed(viewModel) {
     "use strict";
     var clients = ko.mapping.fromJS([
-        {"id": "1", "name": "George Bailey", "nice": true},
-        {"id": "2", "name": "Mary Hatch", "nice": true},
-        {"id": "3", "name": "Henry F. Potter", "nice": false}
+        {"id": "1", "name": "George Bailey", "nice": "1"},
+        {"id": "2", "name": "Mary Hatch", "nice": "1"},
+        {"id": "3", "name": "Henry F. Potter", "nice": "0"}
     ]);
     viewModel.clients(clients());
     return viewModel;
@@ -145,4 +145,10 @@ asyncTest("Delete Client", function () {
         start();
     });
     server.respond();
+});
+
+test("Total nice clients", function () {
+    "use strict";
+    var viewModel = seed(new ViewModel());
+    equal(viewModel.niceCount(), 2, "Two nice clients");
 });
