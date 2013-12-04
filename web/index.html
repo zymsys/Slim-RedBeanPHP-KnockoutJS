@@ -11,7 +11,7 @@
 <div class="container">
 <h1>North Pole Manufacturing</h1>
 <ul class="nav nav-tabs" data-bind="foreach: tabs">
-    <li data-bind="css: {active: $data == $root.activeTab()}" class="active"><a href="#" data-bind="click: $root.setActiveTab($data), text:$data"></a></li>
+    <li data-bind="css: {active: $data == $root.activeTab()}"><a href="#" data-bind="click: $root.setActiveTab($data), text:$data"></a></li>
 </ul>
 <div data-bind="visible: activeTab() == 'Clients'">
     <ul data-bind="foreach:clients">
