@@ -15,7 +15,7 @@
 </ul>
 <div data-bind="visible: activeTab() == 'Clients'">
     <ul data-bind="foreach:clients">
-        <li class="link" data-bind="text:name, click:$root.editClient"></li>
+        <li class="link" data-bind="css: {naughty: nice() == '0'}, text:name, click:$root.editClient"></li>
     </ul>
     <div><span data-bind="text:niceCount">-</span> Nice Clients</div>
     <button class="btn" data-bind="click:newClient">Add Client</button>
